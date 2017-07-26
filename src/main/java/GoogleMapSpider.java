@@ -31,7 +31,7 @@ public class GoogleMapSpider {
         for(WebElement webElement:webElementList){
             List<WebElement> webElements= webElement.findElements(By.xpath("div"));
             for(WebElement webElement2:webElements){
-                List<WebElement> webElements2= webElement2.findElements(By.xpath("div"));
+                List<WebElement> webElements2= webElement.findElements(By.cssSelector("div.section-result"));
                 for(WebElement webElement1:webElements2){
                     try {
                         // System.out.println(webElement.findElement(By.cssSelector("div.section-result-text-content > div.section-result-header > div.section-result-title-container")).getText());
